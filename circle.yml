@@ -5,8 +5,8 @@ jobs:
       - image: docker
     steps:
       - run:
-        name: ls
-        command: ls
+          name: ls
+          command: ls
       - run:
           name: Install docker
           command: sh docker.sh
