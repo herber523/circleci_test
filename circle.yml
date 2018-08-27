@@ -5,12 +5,6 @@ jobs:
     steps:
       - checkout
       - run:
-          name: ls
-          command: ls
-      - run:
-          name: Install docker
-          command: sh docker.sh
-      - run:
           name: docker info
           command: docker info
       - run:
