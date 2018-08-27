@@ -16,3 +16,8 @@ jobs:
       - run:
           name: run api test
           command: curl --retry 10 --retry-delay 5 -v http://localhost:5000
+  build2:
+    machine: true
+    steps:
+      - checkout
+      - run: docker ps
