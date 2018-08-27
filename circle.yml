@@ -4,14 +4,12 @@ jobs:
     docker:
       - image: docker
     steps:
-      - checkout
       - run:
           name: docker info
           command: docker info
       - run:
           name: docker build
           command: docker build -t helloworld .
-      - test
       - run:
           name: run api
           command: docker run -d -p 5000:5000 helloworld; sleep 10
